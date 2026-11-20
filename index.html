@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Micro Apps Rentables: crea apps que hacen vender más a negocios locales | Impulso Digital JR</title>
+<meta name="description" content="Aprende a crear micro apps rentables para tu uso personal y para vender a negocios locales que quieren vender más. Pide información por WhatsApp.">
+
+<!-- Favicon (pestaña del navegador) -->
+<link rel="icon" type="image/png" href="https://i.postimg.cc/JnQXh5bM/impulsodigitaljr-b-icon-180x180.png">
+<link rel="apple-touch-icon" href="https://i.postimg.cc/JnQXh5bM/impulsodigitaljr-b-icon-180x180.png">
+
+<!-- Vista previa al compartir en grupos de Facebook: al hacer clic en la imagen, abre la página de ventas -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Crea micro apps rentables y véndelas a negocios de tu ciudad">
+<meta property="og:description" content="Aprende a crear apps útiles para ti y para negocios locales que quieren vender más. Pide informes por WhatsApp.">
+<meta property="og:image" content="https://i.postimg.cc/bw5gPk0w/Micro-Apps-Instagram2.png">
+<meta property="og:image:alt" content="Micro Apps rentables - Impulso Digital JR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://i.postimg.cc/bw5gPk0w/Micro-Apps-Instagram2.png">
+
+<script>
+  // Aplica el tema guardado (o el del sistema) antes de pintar la página
+  (function(){var t=null;try{t=localStorage.getItem('tema')}catch(e){}
+  if(!t){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light'}
+  document.documentElement.setAttribute('data-theme',t)})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{--ink:#10243A;--ink-2:#1B3A5C;--paper:#EEF4F8;--white:#fff;--bg:#EEF4F8;--surface:#fff;--text:#10243A;--line:#CBD8E4;--deep:#10243A;--go:#18B56A;--go-dark:#0F9455;--hot:#FF5A4E;--sun:#FFC83D;--muted:#51657A;--r:18px;color-scheme:light}
+:root[data-theme="dark"]{--bg:#0B1724;--surface:#132A42;--text:#E8F0F7;--muted:#A9BDD0;--line:#2C4A68;--deep:#1B3A5C;color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;font-size:18px;transition:background .25s,color .25s}
+h1,h2,h3{font-family:'Montserrat',sans-serif;line-height:1.15;letter-spacing:-.01em}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+section{padding:72px 0}
+h2{font-size:clamp(26px,4.2vw,40px);font-weight:800;margin-bottom:16px}
+h2 em,h1 em{font-style:normal;color:var(--sun)}
+.lead{color:var(--muted);max-width:60ch;font-size:19px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--go);color:#fff;text-decoration:none;padding:16px 28px;border-radius:999px;border:0;cursor:pointer;font:700 18px 'Source Sans 3',sans-serif;box-shadow:0 8px 0 var(--go-dark);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(4px);box-shadow:0 4px 0 var(--go-dark)}
+.btn.alt{background:transparent;border:2px solid #fff;box-shadow:none}
+.btn:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+
+/* botón modo claro/oscuro */
+.theme-toggle{position:fixed;right:18px;bottom:18px;z-index:10;display:flex;align-items:center;gap:8px;background:var(--sun);color:#10243A;border:0;border-radius:999px;padding:12px 18px;font:700 16px 'Source Sans 3',sans-serif;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.theme-toggle:hover{filter:brightness(1.05)}
+.theme-toggle:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.theme-toggle svg{width:20px;height:20px}
+.theme-toggle .i-sun{display:none}
+:root[data-theme="dark"] .theme-toggle .i-sun{display:block}
+:root[data-theme="dark"] .theme-toggle .i-moon{display:none}
+
+/* barra */
+.top{position:absolute;top:0;left:0;right:0;z-index:2}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;font:800 17px 'Montserrat',sans-serif;text-decoration:none}
+.brand img{width:38px;height:38px;border-radius:10px}
+.top .pill{background:var(--sun);color:var(--ink);font-weight:700;text-decoration:none;padding:9px 18px;border-radius:999px;font-size:16px}
+
+/* hero */
+.hero{position:relative;color:#fff;padding:140px 0 90px;background:linear-gradient(180deg,rgba(16,36,58,.78),rgba(16,36,58,.93)),url("https://images.unsplash.com/photo-1779444480590-9bf6f021d5d4?auto=format&fit=crop&w=1600&q=75") center/cover var(--ink)}
+.badge{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;font-size:15px;padding:6px 14px;border-radius:999px;margin-bottom:20px}
+.hero h1{font-size:clamp(32px,5.6vw,58px);font-weight:900;margin-bottom:20px;max-width:18ch}
+.hero p{color:#D5E2EE;font-size:20px;margin-bottom:28px;max-width:56ch}
+.hero .row{display:flex;flex-wrap:wrap;gap:16px}
+
+/* dolor */
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.split p{color:var(--muted);margin-bottom:14px}
+.photo{border-radius:var(--r);overflow:hidden;position:relative}
+.photo img{width:100%;height:100%;object-fit:cover}
+.quote{background:var(--deep);color:#fff;font:700 18px 'Montserrat',sans-serif;padding:18px 22px;border-radius:14px;margin-top:20px;border-left:6px solid var(--hot)}
+
+/* aprender */
+.steps{background:var(--surface)}
+.steps ol{list-style:none;margin:34px 0;display:grid;grid-template-columns:1fr 1fr;gap:18px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:52px 1fr;gap:16px;padding:20px;background:var(--bg);border-radius:var(--r);border-left:6px solid var(--go)}
+.steps li::before{content:counter(s);font:900 26px 'Montserrat',sans-serif;background:var(--ink);color:var(--sun);width:52px;height:52px;border-radius:50%;display:grid;place-items:center}
+.steps h3{font-size:19px;font-weight:800;margin-bottom:4px}
+.steps li p{color:var(--muted);font-size:17px}
+
+/* ejemplos */
+.ideas{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.idea{background:var(--deep);color:#fff;border-radius:var(--r);padding:24px}
+.idea h3{font-size:18px;font-weight:800;margin:12px 0 6px;color:var(--sun)}
+.idea p{font-size:16px;color:#C9D8E6}
+.idea svg{width:48px;height:48px}
+
+/* ingresos */
+.earn{position:relative;color:#fff;background:linear-gradient(rgba(16,36,58,.88),rgba(16,36,58,.92)),url("https://images.unsplash.com/photo-1753351052046-8c6818304a4f?auto=format&fit=crop&w=1600&q=75") center/cover var(--ink-2)}
+.earn ul{list-style:none;margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:20px 30px}
+.earn li strong{display:block;font:800 19px 'Montserrat',sans-serif;color:var(--sun)}
+.earn li span{color:#D5E2EE}
+.earn small{display:block;margin-top:26px;color:#9FB4C8;font-size:15px}
+
+/* cómo funciona */
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.how div{background:var(--surface);border-radius:var(--r);padding:24px;border-top:6px solid var(--sun)}
+.how h3{font-size:19px;font-weight:800;margin-bottom:6px}
+.how p{color:var(--muted);font-size:17px}
+
+/* contacto */
+.box{display:grid;grid-template-columns:.9fr 1.1fr;background:var(--surface);border-radius:26px;overflow:hidden;box-shadow:0 20px 50px rgba(16,36,58,.15)}
+.side{background:var(--go);color:#fff;padding:38px 32px;display:flex;flex-direction:column}
+.side h2{color:#fff;font-size:clamp(24px,3.4vw,34px)}
+.side h2 em{color:var(--ink)}
+.side p{margin-bottom:16px}
+.side img{border-radius:14px;margin-top:auto;height:200px;width:100%;object-fit:cover}
+form{padding:38px 32px}
+label{display:block;font-weight:700;margin-bottom:6px;font-size:16px}
+.f{margin-bottom:16px}
+input,select{width:100%;padding:14px 16px;border:2px solid var(--line);border-radius:12px;font:inherit;background:var(--bg);color:var(--text)}
+input:focus,select:focus{border-color:var(--go)}
+.err{color:#C62828;font-size:15px;margin-top:4px;display:none}
+.f.bad input{border-color:#C62828}.f.bad .err{display:block}
+form .btn{width:100%}
+.fine{font-size:14px;color:var(--muted);margin-top:14px;text-align:center}
+
+/* faq */
+details{background:var(--surface);border-radius:14px;padding:18px 22px;margin-top:12px}
+summary{font-weight:700;cursor:pointer}
+details p{margin-top:10px;color:var(--muted)}
+footer{background:var(--ink);color:#9FB4C8;text-align:center;padding:30px 22px;font-size:15px}
+
+@media(max-width:860px){.split,.box{grid-template-columns:1fr}.ideas,.how{grid-template-columns:1fr 1fr}.steps ol,.earn ul{grid-template-columns:1fr}.side img{margin-top:10px}}
+@media(max-width:520px){body{font-size:17px}section{padding:54px 0}.ideas,.how{grid-template-columns:1fr}.hero .btn,.hero .row{width:100%}.side,form{padding:28px 22px}.top .pill{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar entre modo claro y oscuro">
+  <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg>
+  <span id="themeLabel">Modo oscuro</span>
+</button>
+
+<header class="hero">
+  <div class="top"><div class="wrap">
+    <a class="brand" href="#"><img src="https://i.postimg.cc/JnQXh5bM/impulsodigitaljr-b-icon-180x180.png" alt="Impulso Digital JR">Impulso Digital JR</a>
+    <a class="pill" href="#contacto">Pedir información</a>
+  </div></div>
+  <div class="wrap">
+    <span class="badge">Micro apps rentables, sin ser programador</span>
+    <h1>Crea pequeñas apps que <em>hacen vender más</em> a los negocios de tu ciudad.</h1>
+    <p>Aprende a construir micro apps útiles para tu propio día a día y a venderlas a restaurantes, barberías, clínicas, tiendas y gimnasios que necesitan una herramienta digital sencilla.</p>
+    <div class="row">
+      <a class="btn" href="#contacto">Quiero más información</a>
+      <a class="btn alt" href="#que-aprendes">Ver qué aprenderás</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <h2>Los negocios de tu barrio no necesitan una app gigante. Necesitan la tuya.</h2>
+      <p>La barbería que todavía apunta citas en una libreta. El restaurante que pierde pedidos porque nadie contesta el teléfono. La tienda que no tiene forma de hacer volver a sus clientes.</p>
+      <p>Son problemas pequeños que cuestan ventas cada día, y se resuelven con herramientas pequeñas. Quien sabe crearlas tiene una oportunidad enorme justo en su calle.</p>
+      <div class="quote">«¿Cómo consigo que mis clientes reserven y vuelvan, sin pagar un software caro?»</div>
+    </div>
+    <div class="photo"><img src="https://images.unsplash.com/photo-1551529563-fce9529e67ac?auto=format&fit=crop&w=1200&q=75" alt="Encargado de una cafetería pensativo detrás del mostrador" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="steps" id="que-aprendes">
+  <div class="wrap">
+    <h2>Lo que vas a aprender</h2>
+    <p class="lead">Un camino práctico, de la idea a una app funcionando en el celular de un cliente real.</p>
+    <ol>
+      <li><div><h3>Pensar como creador</h3><p>Detectar el problema concreto de un negocio y convertirlo en una idea de app pequeña, útil y vendible.</p></div></li>
+      <li><div><h3>Construir sin ser programador</h3><p>Crear micro apps web que funcionan en cualquier celular, con herramientas modernas y asistidas por IA.</p></div></li>
+      <li><div><h3>Usarlas en tu día a día</h3><p>Tus propias apps para organizar gastos, clientes, tareas o proyectos personales.</p></div></li>
+      <li><div><h3>Presentar y vender</h3><p>Cómo ofrecerlas a negocios de tu zona, mostrar una demo y cobrar por instalación o mantenimiento.</p></div></li>
+    </ol>
+    <div class="split" style="align-items:center">
+      <div class="photo"><img src="https://images.unsplash.com/photo-1765648580808-76d75e4f3833?auto=format&fit=crop&w=1000&q=75" alt="Mujer sonriente trabajando con su laptop en una cafetería" loading="lazy"></div>
+      <div><h2 style="font-size:clamp(22px,3.4vw,30px)">Tu primera micro app puede estar lista antes de lo que piensas.</h2><a class="btn" href="#contacto">Quiero empezar</a></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Micro apps que un negocio local entiende en diez segundos</h2>
+    <p class="lead">Ejemplos de lo que podrás crear y ofrecer. Cada una resuelve un problema que cuesta dinero.</p>
+    <div class="ideas">
+      <div class="idea"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="9" width="36" height="32" rx="6" fill="none" stroke="#FFC83D" stroke-width="3"/><path d="M6 19h36M16 5v8M32 5v8" stroke="#FFC83D" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="30" r="4" fill="#18B56A"/></svg><h3>Reservas para barberías</h3><p>El cliente elige hora desde el celular; el negocio deja de perder citas por teléfono.</p></div>
+      <div class="idea"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="8" width="14" height="14" rx="2" fill="none" stroke="#FFC83D" stroke-width="3"/><rect x="26" y="8" width="14" height="14" rx="2" fill="none" stroke="#FFC83D" stroke-width="3"/><rect x="8" y="26" width="14" height="14" rx="2" fill="none" stroke="#FFC83D" stroke-width="3"/><path d="M28 28h10v10H28z" fill="#18B56A"/></svg><h3>Carta digital con pedidos</h3><p>Un código QR en la mesa o el mostrador, y los pedidos llegan directos por WhatsApp.</p></div>
+      <div class="idea"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="10" width="38" height="28" rx="6" fill="none" stroke="#FFC83D" stroke-width="3"/><circle cx="16" cy="24" r="4" fill="#18B56A"/><circle cx="28" cy="24" r="4" fill="#18B56A"/><circle cx="38" cy="24" r="0" /></svg><h3>Tarjeta de fidelización</h3><p>Sellos digitales que hacen volver al cliente: el décimo café, el corte gratis.</p></div>
+      <div class="idea"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="5" width="30" height="38" rx="5" fill="none" stroke="#FFC83D" stroke-width="3"/><rect x="15" y="11" width="18" height="8" rx="2" fill="#18B56A"/><path d="M16 27h4M28 27h4M16 35h4M28 35h4" stroke="#FFC83D" stroke-width="3" stroke-linecap="round"/></svg><h3>Calculadora de presupuestos</h3><p>Para talleres, reformas o imprentas: el cliente obtiene un precio orientativo al instante.</p></div>
+      <div class="idea"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 42S6 30 6 17a10 10 0 0 1 18-6 10 10 0 0 1 18 6c0 13-18 25-18 25z" fill="none" stroke="#FFC83D" stroke-width="3" stroke-linejoin="round"/><path d="M14 24h6l3-6 4 11 3-5h4" fill="none" stroke="#18B56A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Citas para clínicas</h3><p>Recordatorios y agenda simple para consultas, fisioterapia o estética.</p></div>
+      <div class="idea"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 16h32l-3 24H11L8 16z" fill="none" stroke="#FFC83D" stroke-width="3" stroke-linejoin="round"/><path d="M17 16a7 7 0 0 1 14 0" fill="none" stroke="#18B56A" stroke-width="3" stroke-linecap="round"/></svg><h3>Catálogo para tiendas</h3><p>Productos con foto y un botón para pedir; ideal para comercios de barrio.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="earn">
+  <div class="wrap">
+    <h2>Ellos venden más. <em>Tú generas ingresos.</em></h2>
+    <ul>
+      <li><strong>Ingresos por cada app</strong><span>Cobra por crear e instalar la herramienta en cada negocio.</span></li>
+      <li><strong>Ingresos recurrentes</strong><span>Ofrece mantenimiento o mejoras mensuales a tus clientes.</span></li>
+      <li><strong>Reutiliza lo que creas</strong><span>Una app de reservas sirve para muchas barberías distintas.</span></li>
+      <li><strong>Trabaja desde donde quieras</strong><span>Solo necesitas tu computadora y tu celular.</span></li>
+    </ul>
+    <small>Los resultados dependen de tu dedicación y de tu mercado; no prometemos cifras, te damos el método.</small>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Cómo funciona</h2>
+    <div class="how">
+      <div><h3>1. Escríbenos por WhatsApp</h3><p>Llena el formulario de abajo: se abre WhatsApp con tu mensaje listo. Sin correo, sin registros.</p></div>
+      <div><h3>2. Recibe la información</h3><p>Te contamos cómo es el aprendizaje, qué vas a construir y cómo empezar según tu objetivo.</p></div>
+      <div><h3>3. Crea tu primera micro app</h3><p>Empiezas con una app para ti o para un negocio real de tu entorno, paso a paso.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Necesito saber programar?</summary><p>No. El enfoque está pensado para personas sin experiencia técnica: aprendes a construir apps sencillas apoyándote en herramientas actuales.</p></details>
+    <details><summary>¿Qué necesito para empezar?</summary><p>Una computadora con internet y ganas de aprender. Tu celular te servirá para probar tus apps.</p></details>
+    <details><summary>¿De verdad puedo venderlas a negocios?</summary><p>Muchos negocios locales no tienen reservas en línea, carta digital ni programa de fidelización. Una herramienta pequeña que les ahorra tiempo o les trae clientes es fácil de entender y valorar. Los ingresos dependen de ti, de tu zona y de cuántos negocios contactes.</p></details>
+    <details><summary>¿Cuánto tiempo me llevará?</summary><p>Depende de tu ritmo. Escríbenos y te explicamos cómo está organizado el aprendizaje.</p></details>
+    <details><summary>¿Por qué solo por WhatsApp?</summary><p>Porque es más rápido y directo: hablas con una persona y resuelves tus dudas sin dejar tu correo en ningún sitio.</p></details>
+  </div>
+</section>
+
+<section id="contacto" style="padding-top:0">
+  <div class="wrap">
+    <div class="box">
+      <div class="side">
+        <h2>Tu primera micro app está a <em>un mensaje</em> de distancia.</h2>
+        <p>Déjanos tu nombre y tu objetivo. Se abrirá WhatsApp con el mensaje escrito y te enviaremos toda la información para empezar.</p>
+        <img src="https://images.unsplash.com/photo-1573633509389-0e3075dea01b?auto=format&fit=crop&w=1000&q=75" alt="Hombre sonriente hablando por teléfono con una taza de café" loading="lazy">
+      </div>
+      <form id="waForm" novalidate>
+        <div class="f" id="f-nombre">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" autocomplete="name" placeholder="Ej. María López">
+          <div class="err">Escribe tu nombre para continuar.</div>
+        </div>
+        <div class="f">
+          <label for="ciudad">Ciudad / país (opcional)</label>
+          <input id="ciudad" type="text" autocomplete="address-level2" placeholder="Ej. Veracruz, México">
+        </div>
+        <div class="f">
+          <label for="interes">¿Para qué te gustaría crear micro apps?</label>
+          <select id="interes">
+            <option>Para uso personal</option>
+            <option>Para vender a negocios locales</option>
+            <option selected>Ambas</option>
+          </select>
+        </div>
+        <div class="f">
+          <label for="negocio">¿Tienes algún negocio en mente? (opcional)</label>
+          <input id="negocio" type="text" placeholder="Ej. barbería, restaurante, clínica…">
+        </div>
+        <button class="btn" type="submit">Enviar por WhatsApp</button>
+        <p class="fine">Sin correo electrónico, sin formularios largos. Solo WhatsApp.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Impulso Digital JR. Todos los derechos reservados.</footer>
+
+<script>
+  // Cambia por tu número de WhatsApp con lada de país, sin + ni espacios (México: 52 + 10 dígitos)
+  var WA_NUMBER = "522291096725";
+  var $ = function(id){return document.getElementById(id)};
+  function paintTheme(){ $('themeLabel').textContent = document.documentElement.getAttribute('data-theme')==='dark' ? 'Modo claro' : 'Modo oscuro'; }
+  paintTheme();
+  $('themeToggle').addEventListener('click', function(){
+    var next = document.documentElement.getAttribute('data-theme')==='dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try{ localStorage.setItem('tema', next); }catch(e){}
+    paintTheme();
+  });
+  $('waForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var n = $('nombre').value.trim();
+    if(!n){ $('f-nombre').classList.add('bad'); $('nombre').focus(); return; }
+    $('f-nombre').classList.remove('bad');
+    var t = 'Hola, soy ' + n + '. Quiero más información sobre cómo aprender a crear micro apps rentables para uso personal y venderlas a negocios locales para incrementar sus ventas. Me interesa crearlas: ' + $('interes').value.toLowerCase() + '.';
+    if($('ciudad').value.trim()) t += ' Soy de ' + $('ciudad').value.trim() + '.';
+    if($('negocio').value.trim()) t += ' Negocio en mente: ' + $('negocio').value.trim() + '.';
+    window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(t), '_blank');
+  });
+</script>
+</body>
+</html>
